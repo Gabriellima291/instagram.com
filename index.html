@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login - Instagram</title>
+</head>
+<body>
+    <div class="container">
+        <form class="login-form" onsubmit="return redirectToHome();">
+            <h1>Instagram</h1>
+            <input type="text" placeholder="Número de telefone, nome de usuário ou e-mail" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+            <p>Esqueceu a senha?</p>
+        </form>
+    </div>
+
+    <script>
+        function redirectToHome() {
+            window.location.href = "home.html";
+            return false; // Evita o envio do formulário
+        }
+    </script>
+</body>
+</html>
+
